@@ -32,13 +32,15 @@ export function Header() {
 
   const handleNavClick = (href: string) => {
     setMobileMenuOpen(false)
-    document.querySelector(href)?.scrollIntoView({ behavior: "smooth" })
+    setTimeout(() => {
+      document.querySelector(href)?.scrollIntoView({ behavior: "smooth" })
+    }, 250)
   }
 
   return (
     <header
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        isScrolled ? "bg-background/80 backdrop-blur-md shadow-md py-2" : "bg-transparent py-4"
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 py-4 ${
+        isScrolled ? "bg-background/80 backdrop-blur-md shadow-md" : "bg-transparent"
       }`}
     >
       <div className="container mx-auto px-4 flex justify-between items-center">
