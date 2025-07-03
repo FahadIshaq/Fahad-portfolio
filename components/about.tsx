@@ -24,6 +24,66 @@ export function About() {
     visible: { opacity: 1, y: 0, transition: { duration: 0.5 } },
   }
 
+  const skills = [
+    { name: "JavaScript", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" },
+    { name: "TypeScript", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" },
+    { name: "Python", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" },
+    { name: "HTML", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" },
+    { name: "CSS", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" },
+    { name: "ReactJS", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" },
+    { name: "React Native", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" },
+    { name: "Next.js", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg" },
+    { name: "Bootstrap", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" },
+    { name: "TailwindCSS", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg" },
+    { name: "Material UI", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/materialui/materialui-original.svg" },
+    { name: "SASS", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sass/sass-original.svg" },
+    { name: "Node.js", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" },
+    { name: "Express.js", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg" },
+    { name: "NestJS", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nestjs/nestjs-original.svg" },
+    { name: "MongoDB", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" },
+    { name: "MySQL", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" },
+    { name: "Git", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" },
+    { name: "GitHub", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" },
+    { name: "Bitbucket", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bitbucket/bitbucket-original.svg" },
+    { name: "REST API Integration",       icon: "https://cdn-icons-png.flaticon.com/512/6011/6011078.png"
+      // plug icon from Flaticon
+    },
+    { name: "Redux", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redux/redux-original.svg" },
+    { name: "RTK Query", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redux/redux-original.svg" },
+    { name: "MangoPay Integration",        icon: "https://cdn-icons-png.flaticon.com/512/4203/4203611.png", // credit card/payment icon
+      // plug icon from Flaticon
+    },
+    { name: "Agile Methodologies", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jira/jira-original.svg" },
+    { name: "Jira", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jira/jira-original.svg" },
+    // Python Automation Frameworks
+    { name: "Selenium", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/selenium/selenium-original.svg" },
+    { name: "BeautifulSoup", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" },
+    { name: "Requests", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" },
+    { name: "Pandas", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pandas/pandas-original.svg" },
+    { name: "NumPy", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/numpy/numpy-original.svg" },
+    { name: "Matplotlib", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/matplotlib/matplotlib-original.svg" },
+    { name: "Scikit-learn",   icon: "https://upload.wikimedia.org/wikipedia/commons/0/05/Scikit_learn_logo_small.svg"
+    },
+    { name: "TensorFlow", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tensorflow/tensorflow-original.svg" },
+    { name: "PyTorch", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pytorch/pytorch-original.svg" },
+    { name: "OpenCV", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/opencv/opencv-original.svg" },
+    { name: "Jupyter", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jupyter/jupyter-original.svg" },
+    { name: "Django", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/django/django-plain.svg" },
+    { name: "Flask", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flask/flask-original.svg" },
+    { name: "FastAPI", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/fastapi/fastapi-original.svg" },
+    // Additional Skills
+    { name: "SQL", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" },
+    { name: "Bash/Shell Scripting", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bash/bash-original.svg" },
+    { name: "Framer Motion",  icon: "https://raw.githubusercontent.com/simple-icons/simple-icons/develop/icons/framer.svg"
+    },
+    { name: "Socket.IO", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/socketio/socketio-original.svg" },
+    { name: "WebSockets", icon: "https://cdn-icons-png.flaticon.com/512/3544/3544681.png"
+    },
+    { name: "Postman", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postman/postman-original.svg" },
+    { name: "Docker", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" },
+    { name: "CI/CD", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" },
+  ]
+
   return (
     <section id="about" ref={ref} className="py-20 bg-background/50 relative">
       <div className="container mx-auto px-4">
@@ -93,32 +153,20 @@ export function About() {
                   <div>
                     <h3 className="text-xl font-semibold mb-3">Technical Skills</h3>
                     <ul className="grid grid-cols-2 md:grid-cols-4 gap-4 text-foreground/70">
-                      <li className="flex items-center gap-2"><span className="h-2 w-2 bg-emerald-500 rounded-full"></span><span>JavaScript</span></li>
-                      <li className="flex items-center gap-2"><span className="h-2 w-2 bg-emerald-500 rounded-full"></span><span>TypeScript</span></li>
-                      <li className="flex items-center gap-2"><span className="h-2 w-2 bg-emerald-500 rounded-full"></span><span>Python</span></li>
-                      <li className="flex items-center gap-2"><span className="h-2 w-2 bg-emerald-500 rounded-full"></span><span>HTML</span></li>
-                      <li className="flex items-center gap-2"><span className="h-2 w-2 bg-emerald-500 rounded-full"></span><span>CSS</span></li>
-                      <li className="flex items-center gap-2"><span className="h-2 w-2 bg-emerald-500 rounded-full"></span><span>ReactJS</span></li>
-                      <li className="flex items-center gap-2"><span className="h-2 w-2 bg-emerald-500 rounded-full"></span><span>React Native</span></li>
-                      <li className="flex items-center gap-2"><span className="h-2 w-2 bg-emerald-500 rounded-full"></span><span>Next.js</span></li>
-                      <li className="flex items-center gap-2"><span className="h-2 w-2 bg-emerald-500 rounded-full"></span><span>Bootstrap</span></li>
-                      <li className="flex items-center gap-2"><span className="h-2 w-2 bg-emerald-500 rounded-full"></span><span>TailwindCSS</span></li>
-                      <li className="flex items-center gap-2"><span className="h-2 w-2 bg-emerald-500 rounded-full"></span><span>Material UI</span></li>
-                      <li className="flex items-center gap-2"><span className="h-2 w-2 bg-emerald-500 rounded-full"></span><span>SASS</span></li>
-                      <li className="flex items-center gap-2"><span className="h-2 w-2 bg-emerald-500 rounded-full"></span><span>Node.js</span></li>
-                      <li className="flex items-center gap-2"><span className="h-2 w-2 bg-emerald-500 rounded-full"></span><span>Express.js</span></li>
-                      <li className="flex items-center gap-2"><span className="h-2 w-2 bg-emerald-500 rounded-full"></span><span>NestJS</span></li>
-                      <li className="flex items-center gap-2"><span className="h-2 w-2 bg-emerald-500 rounded-full"></span><span>MongoDB</span></li>
-                      <li className="flex items-center gap-2"><span className="h-2 w-2 bg-emerald-500 rounded-full"></span><span>MySQL</span></li>
-                      <li className="flex items-center gap-2"><span className="h-2 w-2 bg-emerald-500 rounded-full"></span><span>Git</span></li>
-                      <li className="flex items-center gap-2"><span className="h-2 w-2 bg-emerald-500 rounded-full"></span><span>GitHub</span></li>
-                      <li className="flex items-center gap-2"><span className="h-2 w-2 bg-emerald-500 rounded-full"></span><span>Bitbucket</span></li>
-                      <li className="flex items-center gap-2"><span className="h-2 w-2 bg-emerald-500 rounded-full"></span><span>REST API Integration</span></li>
-                      <li className="flex items-center gap-2"><span className="h-2 w-2 bg-emerald-500 rounded-full"></span><span>Redux</span></li>
-                      <li className="flex items-center gap-2"><span className="h-2 w-2 bg-emerald-500 rounded-full"></span><span>RTK Query</span></li>
-                      <li className="flex items-center gap-2"><span className="h-2 w-2 bg-emerald-500 rounded-full"></span><span>MangoPay Integration</span></li>
-                      <li className="flex items-center gap-2"><span className="h-2 w-2 bg-emerald-500 rounded-full"></span><span>Agile Methodologies</span></li>
-                      <li className="flex items-center gap-2"><span className="h-2 w-2 bg-emerald-500 rounded-full"></span><span>Jira</span></li>
+                      {skills.map((skill, index) => (
+                        <li key={index} className="flex items-center gap-2">
+                          <img 
+                            src={skill.icon} 
+                            alt={skill.name}
+                            className="h-5 w-5"
+                            onError={(e) => {
+                              // Fallback to a generic icon if the devicon fails to load
+                              e.currentTarget.src = "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/code/code-original.svg"
+                            }}
+                          />
+                          <span>{skill.name}</span>
+                        </li>
+                      ))}
                     </ul>
                   </div>
                 </div>

@@ -8,7 +8,7 @@ import { Card, CardContent } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Textarea } from "@/components/ui/textarea"
-import { Mail, Phone, MapPin, Send, Loader2 } from "lucide-react"
+import { Mail, Phone, MapPin, Send, Loader2, Download } from "lucide-react"
 import { useToast } from "@/hooks/use-toast"
 
 export function Contact() {
@@ -115,6 +115,32 @@ export function Contact() {
                       <div>
                         <h3 className="text-lg font-semibold mb-1">Location</h3>
                         <p className="text-foreground/70">Islamabad, Pakistan</p>
+                      </div>
+                    </div>
+                  </CardContent>
+                </Card>
+
+                <Card className="border border-border/50 bg-background/50 backdrop-blur-sm shadow-lg overflow-hidden">
+                  <CardContent className="p-6">
+                    <div className="flex items-start gap-4">
+                      <div className="bg-emerald-500/10 p-3 rounded-full">
+                        <Download className="h-6 w-6 text-emerald-500" />
+                      </div>
+                      <div>
+                        <h3 className="text-lg font-semibold mb-1">Resume</h3>
+                        <button
+                          onClick={() => {
+                            const link = document.createElement('a');
+                            link.href = '/fahad-ishaq-cv.pdf';
+                            link.download = 'Fahad Ishaq CV.pdf';
+                            document.body.appendChild(link);
+                            link.click();
+                            document.body.removeChild(link);
+                          }}
+                          className="text-foreground/70 hover:text-emerald-500 transition-colors underline"
+                        >
+                          Download CV
+                        </button>
                       </div>
                     </div>
                   </CardContent>

@@ -3,7 +3,7 @@
 import { useEffect, useRef } from "react"
 import { motion } from "framer-motion"
 import { Button } from "@/components/ui/button"
-import { ArrowDown, Github, Linkedin, Mail } from "lucide-react"
+import { ArrowDown, Github, Linkedin, Mail, Download } from "lucide-react"
 import Typed from "typed.js"
 
 export function Hero() {
@@ -14,10 +14,16 @@ export function Hero() {
       const typed = new Typed(typedRef.current, {
         strings: [
           "Software Engineer",
+          "Backend Developer",
           "Associate Frontend Developer",
           "React Developer",
           "Next.js Developer",
           "React Native Developer",
+          "Full Stack Developer",
+          "IT Project Manager",
+          "Software Developer",
+          "Software Architect",
+
         ],
         typeSpeed: 50,
         backSpeed: 30,
@@ -99,6 +105,22 @@ export function Hero() {
               onClick={() => document.querySelector("#contact")?.scrollIntoView({ behavior: "smooth" })}
             >
               Contact Me
+            </Button>
+            <Button
+              size="lg"
+              variant="outline"
+              className="border-emerald-500/50 hover:bg-emerald-500/10"
+              onClick={() => {
+                const link = document.createElement('a');
+                link.href = '/fahad_cv.pdf';
+                link.download = 'Fahad Ishaq CV.pdf';
+                document.body.appendChild(link);
+                link.click();
+                document.body.removeChild(link);
+              }}
+            >
+              <Download className="w-4 h-4 mr-2" />
+              Download CV
             </Button>
             <Button
               size="lg"
