@@ -131,7 +131,7 @@ export function Contact() {
                         <button
                           onClick={() => {
                             const link = document.createElement('a');
-                            link.href = '/fahad-ishaq-cv.pdf';
+                            link.href = '/fahad_cv.pdf';
                             link.download = 'Fahad Ishaq CV.pdf';
                             document.body.appendChild(link);
                             link.click();

@@ -7,6 +7,7 @@ import { About } from "@/components/about"
 import { Experience } from "@/components/experience"
 import { Skills } from "@/components/skills"
 import { Projects } from "@/components/projects"
+import { Approach } from "@/components/approach"
 import { Contact } from "@/components/contact"
 import { Footer } from "@/components/footer"
 import { ParticlesBackground } from "@/components/particles-background"
@@ -37,6 +38,7 @@ export default function Home() {
       <Experience />
       <Skills />
       <Projects />
+      <Approach />
       <Contact />
       <Footer />
     </main>

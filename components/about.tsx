@@ -45,15 +45,13 @@ export function About() {
     { name: "Git", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" },
     { name: "GitHub", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" },
     { name: "Bitbucket", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bitbucket/bitbucket-original.svg" },
-    { name: "REST API Integration",       icon: "https://cdn-icons-png.flaticon.com/512/6011/6011078.png"
+    { name: "REST APIs",       icon: "https://cdn-icons-png.flaticon.com/512/6011/6011078.png"
       // plug icon from Flaticon
     },
     { name: "Redux", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redux/redux-original.svg" },
     { name: "RTK Query", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redux/redux-original.svg" },
-    { name: "MangoPay Integration",        icon: "https://cdn-icons-png.flaticon.com/512/4203/4203611.png", // credit card/payment icon
-      // plug icon from Flaticon
-    },
-    { name: "Agile Methodologies", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jira/jira-original.svg" },
+    
+    { name: "Agile", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jira/jira-original.svg" },
     { name: "Jira", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jira/jira-original.svg" },
     // Python Automation Frameworks
     { name: "Selenium", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/selenium/selenium-original.svg" },
@@ -82,6 +80,10 @@ export function About() {
     { name: "Postman", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postman/postman-original.svg" },
     { name: "Docker", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" },
     { name: "CI/CD", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" },
+    { name: "MangoPay Integration",         icon: "https://cdn-icons-png.flaticon.com/512/4203/4203611.png"
+      // credit card/payment icon
+      // plug icon from Flaticon
+    },
   ]
 
   return (
