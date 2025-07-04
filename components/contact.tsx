@@ -10,11 +10,14 @@ import { Input } from "@/components/ui/input"
 import { Textarea } from "@/components/ui/textarea"
 import { Mail, Phone, MapPin, Send, Loader2, Download } from "lucide-react"
 import { useToast } from "@/hooks/use-toast"
+import { SuccessModal } from "@/components/success-modal"
 
 export function Contact() {
   const ref = useRef<HTMLDivElement>(null)
   const isInView = useInView(ref, { once: true, margin: "-100px" })
   const [isSubmitting, setIsSubmitting] = useState(false)
+  const [showSuccessModal, setShowSuccessModal] = useState(false)
+  const [successMessage, setSuccessMessage] = useState("")
   const { toast } = useToast()
 
   const containerVariants = {
@@ -36,16 +39,46 @@ export function Contact() {
     e.preventDefault()
     setIsSubmitting(true)
 
-    // Simulate form submission
-    await new Promise((resolve) => setTimeout(resolve, 1500))
+    const formData = new FormData(e.currentTarget)
+    const data = {
+      name: formData.get('name') as string,
+      email: formData.get('email') as string,
+      subject: formData.get('subject') as string,
+      message: formData.get('message') as string,
+    }
 
-    toast({
-      title: "Message sent!",
-      description: "Thank you for your message. I'll get back to you soon.",
-    })
+    try {
+      const response = await fetch('/api/contact', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(data),
+      })
 
-    setIsSubmitting(false)
-    ;(e.target as HTMLFormElement).reset()
+      const result = await response.json()
+
+      if (response.ok) {
+        setSuccessMessage(result.message)
+        setShowSuccessModal(true)
+        ;(e.target as HTMLFormElement).reset()
+      } else {
+        toast({
+          title: "Error",
+          description: result.error || "Something went wrong. Please try again.",
+          variant: "destructive",
+        })
+      }
+    } catch (error) {
+      console.error('Form submission error:', error)
+      toast({
+        title: "Error",
+        description: "Network error. Please check your connection and try again.",
+        variant: "destructive",
+      })
+    } finally {
+      setIsSubmitting(false)
+    }
   }
 
   return (
@@ -160,6 +193,7 @@ export function Contact() {
                         </label>
                         <Input
                           id="name"
+                          name="name"
                           placeholder="Your name"
                           required
                           className="border-border/50 bg-background/50"
@@ -171,6 +205,7 @@ export function Contact() {
                         </label>
                         <Input
                           id="email"
+                          name="email"
                           type="email"
                           placeholder="Your email"
                           required
@@ -184,6 +219,7 @@ export function Contact() {
                       </label>
                       <Input
                         id="subject"
+                        name="subject"
                         placeholder="Subject"
                         required
                         className="border-border/50 bg-background/50"
@@ -195,6 +231,7 @@ export function Contact() {
                       </label>
                       <Textarea
                         id="message"
+                        name="message"
                         placeholder="Your message"
                         rows={5}
                         required
@@ -225,6 +262,13 @@ export function Contact() {
           </div>
         </motion.div>
       </div>
+
+      {/* Success Modal */}
+      <SuccessModal
+        isOpen={showSuccessModal}
+        onClose={() => setShowSuccessModal(false)}
+        message={successMessage}
+      />
     </section>
   )
 }
