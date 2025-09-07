@@ -35,10 +35,11 @@ export default function Home() {
       <Header />
       <Hero />
       <About />
-      <Experience />
-      <Skills />
       <Projects />
       <Approach />
+      <Experience />
+      <Skills />
+    
       <Contact />
       <Footer />
     </main>
