@@ -13,18 +13,14 @@ export function Hero() {
     if (typedRef.current) {
       const typed = new Typed(typedRef.current, {
         strings: [
-          "Software Engineer",
-          "Backend Developer",
-          "Associate Frontend Developer",
-          "React Developer",
-          "Next.js Developer",
-          "React Native Developer",
-          "Full Stack Developer",
-          "IT Project Manager",
-          "Software Developer",
-          "Software Architect",
-
+          "Senior Software Engineer",
+          "Senior Full Stack Engineer",
+          "Senior Backend Engineer",
+          "Senior Frontend Engineer",
+          "Automation Engineer",
+          "Product-Focused Software Engineer",
         ],
+        
         typeSpeed: 50,
         backSpeed: 30,
         backDelay: 1500,
@@ -81,7 +77,7 @@ export function Hero() {
             transition={{ duration: 0.5, delay: 0.2 }}
             className="text-xl md:text-2xl font-medium text-foreground/80 mb-6 h-10"
           >
-            I&apos;m a <span ref={typedRef} className="text-emerald-500"></span>
+            I&apos;m a{" "}<span ref={typedRef} className="text-emerald-500"></span>
           </motion.div>
 
           <motion.p
@@ -90,8 +86,8 @@ export function Hero() {
             transition={{ duration: 0.5, delay: 0.3 }}
             className="text-foreground/70 max-w-2xl mb-8 text-lg"
           >
-            Passionate and detail-oriented Software Engineer with hands-on experience in full stack development and IT project management. I specialize in building scalable, high-performance applications using modern JavaScript technologies like React, Node.js, and Next.js. From concept to deployment, I enjoy turning complex ideas into clean, efficient code that powers real-world solutions.
-          </motion.p>
+Senior Full Stack Engineer experienced in building and scaling real-world products across web and mobile platforms. I specialize in React, Next.js, Node.js, and backend automation, delivering high-performance applications that turn complex ideas into robust, maintainable, and business-driven solutions.
+</motion.p>
 
           <motion.div
             initial={{ opacity: 0, y: 20 }}

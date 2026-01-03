@@ -2,6 +2,7 @@
 
 import { useRef } from "react"
 import { motion, useInView } from "framer-motion"
+import Image from "next/image"
 import { Card, CardContent } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
@@ -31,18 +32,18 @@ export function Projects() {
    
     {
       title: "Bayuti",
-      description: "A modern real estate platform for property listings, search, and management in the UAE.",
+      description: "A modern real estate platform for property listings, search, and management in the United Kingdom.",
       features: [
         "Advanced property search and filtering",
         "Interactive map integration",
         "User dashboards for agents and buyers",
         "Responsive design for mobile and desktop",
       ],
-      image: "/bayuti.png",
+      image: "/main1.png",
       technologies: ["Next.js", "React", "Node.js", "MongoDB", "TailwindCSS", "Mapbox"],
       github: "#",
       demo: "https://bayuti.com/",
-      type: "Web App",
+      type: "Web App / Mobile App",
     },
     {
       title: "Ask Asif",
@@ -68,7 +69,7 @@ export function Projects() {
         "Agent and client dashboards",
         "SEO optimized for real estate",
       ],
-      image: "/victorharris.png",
+      image: "/main3.png",
       technologies: ["WordPress", "Next.js", "React", "SEO Tools", "Google Maps API"],
       github: "#",
       demo: "https://victorharris.co.uk",
@@ -90,20 +91,45 @@ export function Projects() {
       type: "Web App",
     },
     {
-      title: "Multimarkt",
-      description: "A marketplace platform for buying and selling products in Belgium.",
+      title: "The Halimah Project",
+      description:
+        "A faith-centered mentorship platform empowering Muslim youth through academic, professional, social, and spiritual guidance. The Halimah Project connects students with trained mentors to build confidence, character, and a strong sense of community.",
       features: [
-        "Product listings and search",
-        "User registration and profiles",
-        "Secure payment integration",
-        "Admin dashboard for management",
+        "Weekly mentorship sessions",
+        "Academic support and study skills",
+        "Life skills and leadership development",
+        "Faith-based guidance rooted in Islamic values",
+        "Mentor and mentee matching system",
+        "Community-building activities and events",
+        "Donation and volunteer involvement system",
+        "Email subscriptions for updates and programs",
       ],
-      image: "/multimarkt.png",
-      technologies: ["React", "Node.js", "Express.js", "MongoDB", "Stripe API"],
+      impact: [
+        "494+ mentees supported",
+        "296+ trained mentors",
+        "4 active chapters",
+        "2966+ hours of mentorship delivered",
+      ],
+      outcomes: [
+        "93% mentees return for another semester",
+        "87% continue the following year",
+        "95% report increased confidence",
+        "91% strengthened connection to faith",
+      ],
+      image: "/main2.png",
+      technologies: [
+        "Next.js",
+        "React",
+        "TailwindCSS",
+        "Node.js",
+        "MongoDB",
+        "Stripe (Donations)",
+        "Email Subscription Service",
+      ],
+      demo: "https://www.halimahproject.org",
       github: "#",
-      demo: "http://Multimarkt.be",
-      type: "Web App",
-    },
+      type: "Non-Profit Web Platform",
+    },    
     {
       title: "We Serve UAE",
       description: "A service provider platform for connecting users with local businesses in the UAE.",
@@ -252,13 +278,35 @@ export function Projects() {
                         {project.type}
                       </Badge>
                     </div>
-                    <div className="overflow-hidden">
-                      <motion.img
-                        src={project.image}
-                        alt={project.title}
-                        className="w-full h-48 object-cover transition-transform"
+                    <div className="overflow-hidden relative aspect-video bg-muted/20 flex items-center justify-center">
+                      <motion.div
                         whileHover={{ scale: 1.05 }}
-                      />
+                        transition={{ duration: 0.3, ease: "easeOut" }}
+                        className="absolute inset-0"
+                        style={{ 
+                          transform: "translateZ(0)",
+                          WebkitTransform: "translateZ(0)",
+                          backfaceVisibility: "hidden",
+                          WebkitBackfaceVisibility: "hidden"
+                        }}
+                      >
+                        <Image
+                          src={project.image}
+                          alt={project.title}
+                          fill
+                          className="object-contain select-none"
+                          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                          loading="lazy"
+                          quality={85}
+                          priority={false}
+                          draggable={false}
+                          style={{ 
+                            objectFit: "contain",
+                            transform: "translateZ(0)",
+                            WebkitTransform: "translateZ(0)"
+                          }}
+                        />
+                      </motion.div>
                     </div>
                   </div>
                   <CardContent className="p-6">

@@ -113,10 +113,10 @@ export function About() {
                   <div>
                     <h3 className="text-xl font-semibold mb-3">Who I Am</h3>
                     <p className="text-foreground/70 leading-relaxed">
-                      I&apos;m a passionate and detail-oriented Software Engineer with hands-on experience in full stack development and IT project management. I specialize in building scalable, high-performance applications using modern JavaScript technologies like React, Node.js, and Next.js.
+                      Senior Full Stack Engineer with hands-on experience across backend systems, frontend development, and automation. I specialize in building scalable, high-performance applications using modern JavaScript technologies such as React, Next.js, and Node.js.
                     </p>
                     <p className="text-foreground/70 leading-relaxed mt-3">
-                      Known for turning complex technical requirements into efficient, maintainable code, I approach every project with a focus on performance, usability, and clean architecture. Skilled in Agile practices, I work with intention and adaptability, continuously refining processes to boost efficiency and deliver on time. I&apos;m committed to staying current with emerging technologies and always eager to learn, experiment, and bring fresh ideas to the table.
+                      I&apos;m known for translating complex technical and business requirements into clean, maintainable, and production-ready code, with a strong focus on performance, usability, and scalable architecture. Experienced in Agile environments, I work with clarity and adaptability, continuously improving workflows and automating processes to deliver reliable solutions on time. I stay actively engaged with emerging technologies and enjoy refining systems, experimenting with new ideas, and building products that solve real-world problems.
                     </p>
                   </div>
                 </div>
@@ -124,7 +124,7 @@ export function About() {
             </Card>
           </motion.div>
 
-          <motion.div variants={itemVariants} className="mb-10">
+          {/* <motion.div variants={itemVariants} className="mb-10">
             <Card className="border border-border/50 bg-background/50 backdrop-blur-sm shadow-lg">
               <CardContent className="p-6">
                 <div className="flex items-start gap-4">
@@ -143,7 +143,7 @@ export function About() {
                 </div>
               </CardContent>
             </Card>
-          </motion.div>
+          </motion.div> */}
 
           <motion.div variants={itemVariants}>
             <Card className="border border-border/50 bg-background/50 backdrop-blur-sm shadow-lg">

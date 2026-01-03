@@ -27,7 +27,7 @@ export function Experience() {
 
   const experiences = [
     {
-      title: "CTO & Full Stack Developer",
+      title: "CTO & Senior Full Stack Developer",
       company: "ASKASIF",
       period: "January 2025 – Present",
       description: [
@@ -68,17 +68,20 @@ export function Experience() {
       ],
     },
     {
-      title: "Associate Frontend Developer",
+      title: "Full Stack Developer",
       company: "31 Green Ltd",
       period: "October 2024 - Present",
       description: [
-        "Real Estate Platform Development: Contributed to a property investment platform using Next.js and React Native, focusing on performance, scalability, and usability across web and mobile platforms.",
-        "UI/UX & Responsiveness: Implemented responsive design principles to ensure seamless user experience across all device types.",
-        "Reusable Component Architecture: Designed and built modular, reusable components to accelerate development cycles and maintain consistency throughout the codebase.",
-        "State Management & Performance Optimization: Used Redux to manage application state efficiently, enhancing performance and reducing complexity in large-scale interfaces.",
-        "Cross-Team Collaboration: Worked closely with designers and backend developers to ensure fully integrated and cohesive product delivery.",
-        "Code Quality & Best Practices: Followed modern frontend architecture standards, participated in code reviews, and contributed to maintaining a clean and maintainable codebase.",
-        "API Integration: Integrated RESTful APIs for dynamic data rendering and real-time user interaction capabilities.",
+        "Real Estate & Healthcare Platform Development: Delivered scalable web and mobile solutions across multiple production platforms, including Bayuti, MySpecialistOpinion, and Bourne Health, using modern JavaScript frameworks and best practices.",
+        "Bayuti (Full-Stack Development): Worked as a full-stack developer on a real estate investment platform, building and maintaining features using Next.js, React Native, backend APIs, and database integrations, with a strong focus on performance, scalability, and secure data handling.",
+        "MySpecialistOpinion – Phase 2 (Backend Development): Led backend development for Phase 2, implementing new APIs, business logic, and data workflows to support platform expansion, improved performance, and future feature scalability.",
+        "Bourne Health (Frontend Development): Developed a responsive and user-friendly frontend interface, translating complex healthcare requirements into intuitive UI using React/Next.js, ensuring accessibility and smooth user experience.",
+        "UI/UX & Responsive Design: Implemented mobile-first, responsive layouts to ensure seamless user experiences across desktop, tablet, and mobile devices.",
+        "Reusable Component Architecture: Designed and built modular, reusable component systems to maintain consistency, reduce duplication, and accelerate development cycles across multiple projects.",
+        "State Management & Performance Optimization: Utilized Redux and optimized state flows to efficiently manage complex application states, improve load times, and enhance large-scale UI performance.",
+        "API Integration & Data Handling: Integrated RESTful APIs for real-time data rendering, secure user interactions, and smooth communication between frontend and backend systems.",
+        "Cross-Functional Collaboration: Worked closely with designers, backend engineers, and product stakeholders to deliver fully integrated, production-ready solutions.",
+        "Code Quality & Best Practices: Followed modern frontend and full-stack architecture standards, participated in code reviews, and maintained clean, scalable, and maintainable codebases.",
       ],
       skills: [
         "ReactJS",
