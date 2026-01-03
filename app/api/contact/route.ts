@@ -2,8 +2,6 @@ import { NextRequest, NextResponse } from 'next/server'
 import { MongoClient } from 'mongodb'
 import { Resend } from 'resend'
 
-const resend = new Resend(process.env.RESEND_API_KEY)
-
 export async function POST(request: NextRequest) {
   try {
     const { name, email, subject, message } = await request.json()
@@ -68,7 +66,8 @@ export async function POST(request: NextRequest) {
     await collection.insertOne(submission)
     await client.close()
 
-
+    // Initialize Resend only when needed (not during build)
+    const resend = new Resend(process.env.RESEND_API_KEY)
     const emailResult = await resend.emails.send({
       from: 'onboarding@resend.dev',
       to: process.env.NOTIFICATION_EMAIL,
