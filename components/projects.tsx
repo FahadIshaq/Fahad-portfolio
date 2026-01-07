@@ -76,6 +76,35 @@ export function Projects() {
       type: "Web App",
     },
     {
+      title: "My Specialist Appinion (MSA)",
+      description: "A comprehensive healthcare platform providing UK-based specialist medical consultations via web and mobile apps, offering secure messaging, document uploads, and instant second opinions.",
+      features: [
+        "Web application for patient access using Next.js",
+        "Mobile apps (iOS & Android) built with React Native",
+        "Admin panel for managing specialists, appointments, and patients",
+        "Secure document upload and storage",
+        "Real-time messaging with Firebase and custom queuing system",
+        "Personalized specialist recommendations",
+        "GDPR-compliant privacy and data protection",
+        "Affordable pricing plans and instant access to UK specialists"
+      ],
+      image: "/msa-app.png",
+      technologies: [
+        "Next.js",
+        "React Native",
+        "Express.js",
+        "PostgreSQL",
+        "Firebase Messaging",
+        "Custom Queue System (like Redis MQ)",
+        "TypeScript",
+        "REST APIs",
+        "JWT Authentication"
+      ],
+      github: "#",
+      demo: "https://myspecialistappinion.com",
+      type: "Web / Mobile"
+    },
+    {
       title: "Mayfair Agent",
       description: "A real estate agent platform for property management and client engagement.",
       features: [
@@ -222,35 +251,7 @@ export function Projects() {
       demo: "https://arabic-llm-lotc.vercel.app/",
       type: "Web App",
     },
-    {
-      title: "My Specialist Appinion (MSA)",
-      description: "A comprehensive healthcare platform providing UK-based specialist medical consultations via web and mobile apps, offering secure messaging, document uploads, and instant second opinions.",
-      features: [
-        "Web application for patient access using Next.js",
-        "Mobile apps (iOS & Android) built with React Native",
-        "Admin panel for managing specialists, appointments, and patients",
-        "Secure document upload and storage",
-        "Real-time messaging with Firebase and custom queuing system",
-        "Personalized specialist recommendations",
-        "GDPR-compliant privacy and data protection",
-        "Affordable pricing plans and instant access to UK specialists"
-      ],
-      image: "/msa-app.png",
-      technologies: [
-        "Next.js",
-        "React Native",
-        "Express.js",
-        "PostgreSQL",
-        "Firebase Messaging",
-        "Custom Queue System (like Redis MQ)",
-        "TypeScript",
-        "REST APIs",
-        "JWT Authentication"
-      ],
-      github: "#",
-      demo: "https://myspecialistappinion.com",
-      type: "Web / Mobile"
-    },
+    
     {
       title: "BeWell",
       description:
