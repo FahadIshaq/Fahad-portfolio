@@ -176,20 +176,37 @@ export function Projects() {
       type: "Web App",
     },
     {
-      title: "Vopox",
-      description: "A business platform for showcasing services and client projects in Belgium.",
+      title: "Epic Backyards of Texas",
+      description: "A lead-generation business website for a Texas-based company specializing in high-end backyard playground equipment, including playsets, basketball goals, and trampolines.",
       features: [
-        "Service showcase",
-        "Client project galleries",
-        "Contact forms",
-        "Responsive design",
+        "Product showcase for playgrounds, basketball goals, and trampolines",
+        "Request a quote and contact forms",
+        "Gallery for completed installations",
+        "Local business information with map, address, and phone",
+        "Mobile-friendly and responsive design",
+        "Warranty and product brand highlighting"
       ],
-      image: "/vopox.png",
-      technologies: ["WordPress", "Elementor", "Contact Form 7", "SEO Tools"],
+      image: "/epic-backyards-texas.png",
+      technologies: [
+        "HTML",
+        "CSS",
+        "JavaScript",
+        "NestJS",
+        "PostgreSQL",
+        "TypeScript",
+        "TailwindCSS",
+        "React",
+        "Next.js",
+        "Node.js",
+        "Express.js",
+        "MongoDB",
+        "SEO Optimization"
+      ],
       github: "#",
-      demo: "https://www.vopox.be",
-      type: "Web App",
-    },
+      demo: "https://epicbackyardstexas.com",
+      type: "Business Website"
+    }
+,    
     {
       title: "Arabic Learning Platform",
       description: "AI-powered Arabic learning platform with personalized lessons, real-time conversation, and adaptive learning paths.",
