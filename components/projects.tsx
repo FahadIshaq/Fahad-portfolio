@@ -62,19 +62,26 @@ export function Projects() {
     },
     {
       title: "Victor Harris Commercial",
-      description: "A luxury property and real estate website for the London market.",
+      description: "A luxury real estate platform showcasing high-end commercial and residential properties in London, featuring immersive galleries, virtual tours, and advanced client-agent interactions.",
       features: [
-        "High-end property listings",
-        "Virtual tours and galleries",
-        "Agent and client dashboards",
-        "SEO optimized for real estate",
+        "Premium property listings with detailed information",
+        "Virtual tours and image galleries for properties",
+        "Agent and client dashboards for property management and inquiries",
+        "SEO-optimized for London real estate searches",
+        "Integrated Google Maps for property locations",
+        "Responsive and mobile-friendly design"
       ],
       image: "/main3.png",
-      technologies: ["WordPress", "Next.js", "React", "SEO Tools", "Google Maps API"],
+      technologies: [
+        "WordPress",
+        "SEO Tools",
+        "Google Maps API",
+        "Custom Dashboards"
+      ],
       github: "#",
       demo: "https://victorharris.co.uk",
-      type: "Web App",
-    },
+      type: "Web App"
+    },    
     {
       title: "My Specialist Appinion (MSA)",
       description: "A comprehensive healthcare platform providing UK-based specialist medical consultations via web and mobile apps, offering secure messaging, document uploads, and instant second opinions.",
