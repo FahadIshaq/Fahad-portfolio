@@ -29,7 +29,7 @@ export function Experience() {
     {
       title: "CTO & Senior Full Stack Developer",
       company: "ASKASIF",
-      period: "September 2025 – December 2026",
+      period: "September 2025 – December 2025",
       description: [
         "Technical Leadership: Led the entire technology strategy and development team, overseeing architecture decisions and ensuring scalable, maintainable codebase across all platforms.",
         "Full-Stack Development: Built askasif.com from ground up using modern web technologies, implementing responsive design, SEO optimization, and high-performance user interfaces.",
