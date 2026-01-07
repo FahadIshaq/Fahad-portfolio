@@ -123,20 +123,31 @@ export function Projects() {
       type: "Web / Mobile"
     },
     {
-      title: "Mayfair Agent",
-      description: "A real estate agent platform for property management and client engagement.",
+      title: "Seventy One Bar & Grill",
+      description: "A restaurant and golf course dining platform showcasing menus, catering services, events, and customer engagement for Seventy One Bar & Grill at Oeste Ranch Golf Course.",
       features: [
-        "Agent and client portals",
-        "Property management tools",
-        "Automated email notifications",
-        "Responsive and modern UI",
+        "Interactive menu for breakfast, lunch, dinner, and bar items",
+        "Catering and private event booking system",
+        "Integration with golf course and other locations",
+        "Customer reviews and testimonial display",
+        "Contact and inquiry forms for reservations and events",
+        "Responsive design with mobile-friendly layout",
+        "Social media links and online ordering for pickup/delivery"
       ],
-      image: "/mayfairagent.png",
-      technologies: ["Next.js", "React", "Node.js", "MongoDB", "TailwindCSS"],
+      image: "/seventy-one-bar-grill.png",
+      technologies: [
+        "Next.js",
+        "React",
+        "Node.js",
+        "TailwindCSS",
+        "Interactive Forms & Booking System",
+        "Responsive Web Design"
+      ],
       github: "#",
-      demo: "https://mayfairagent.co.uk/",
-      type: "Web App",
-    },
+      demo: "https://seventyonebg.com/",
+      type: "Web App"
+    }
+    ,
     {
       title: "The Halimah Project",
       description:
