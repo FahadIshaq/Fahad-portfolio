@@ -46,20 +46,31 @@ export function Projects() {
       type: "Web App / Mobile App",
     },
     {
-      title: "Ask Asif",
-      description: "A business and service platform connecting users with professionals and service providers.",
+      title: "AskAsif",
+      description: "A premium commercial real estate platform specializing in office space solutions across London, offering personalized property search, virtual meetings, and end-to-end leasing and advisory services.",
       features: [
-        "Service provider directory",
-        "Booking and inquiry system",
-        "User reviews and ratings",
-        "Mobile app integration",
+        "Comprehensive property search by town, city, or postcode",
+        "Virtual meeting scheduling with office space specialists",
+        "Detailed property listings with pricing and location info",
+        "Services including property rentals, sales, market insights, relocation support, and legal/financial advisory",
+        "User-friendly interface with FAQ and enquiry submission",
+        "Client testimonials and Google review integration",
+        "Responsive and mobile-optimized web app"
       ],
       image: "/askasif.png",
-      technologies: ["Next.js", "React", "Node.js", "MongoDB", "TailwindCSS", "Redux"],
+      technologies: [
+        "Next.js",
+        "React",
+        "Node.js",
+        "PostgreSQL",
+        "TailwindCSS",
+        "Interactive Maps & Scheduling System"
+      ],
       github: "#",
-      demo: "https://www.askasif.com",
-      type: "Web App",
-    },
+      demo: "https://askasif.com",
+      type: "Web App"
+    }
+,    
     {
       title: "Victor Harris Commercial",
       description: "A luxury real estate platform showcasing high-end commercial and residential properties in London, featuring immersive galleries, virtual tours, and advanced client-agent interactions.",
