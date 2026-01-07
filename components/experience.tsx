@@ -29,7 +29,7 @@ export function Experience() {
     {
       title: "CTO & Senior Full Stack Developer",
       company: "ASKASIF",
-      period: "January 2025 – Present",
+      period: "September 2025 – December 2026",
       description: [
         "Technical Leadership: Led the entire technology strategy and development team, overseeing architecture decisions and ensuring scalable, maintainable codebase across all platforms.",
         "Full-Stack Development: Built askasif.com from ground up using modern web technologies, implementing responsive design, SEO optimization, and high-performance user interfaces.",
@@ -68,9 +68,9 @@ export function Experience() {
       ],
     },
     {
-      title: "Full Stack Developer",
+      title: "Senior Full Stack Developer",
       company: "31 Green Ltd",
-      period: "October 2024 - Present",
+      period: "October 2024 - December 2025",
       description: [
         "Real Estate & Healthcare Platform Development: Delivered scalable web and mobile solutions across multiple production platforms, including Bayuti, MySpecialistOpinion, and Bourne Health, using modern JavaScript frameworks and best practices.",
         "Bayuti (Full-Stack Development): Worked as a full-stack developer on a real estate investment platform, building and maintaining features using Next.js, React Native, backend APIs, and database integrations, with a strong focus on performance, scalability, and secure data handling.",
