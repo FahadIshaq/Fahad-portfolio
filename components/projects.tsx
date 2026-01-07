@@ -243,48 +243,49 @@ export function Projects() {
       type: "Business Website"
     }
 ,    
-    {
-      title: "Arabic Learning Platform",
-      description: "AI-powered Arabic learning platform with personalized lessons, real-time conversation, and adaptive learning paths.",
-      features: [
-        "AI-powered personalized lessons",
-        "Real-time conversation practice",
-        "Listening and writing exercises",
-        "Progress tracking and achievements",
-      ],
-      image: "/arabic.png",
-      technologies: ["Next.js", "React", "Node.js", "TailwindCSS", "OpenAI API"],
-      github: "#",
-      demo: "https://arabic-llm-lotc.vercel.app/",
-      type: "Web App",
-    },
+{
+  title: "Arabic Learning Platform",
+  description: "AI-powered Arabic learning platform offering personalized lessons, real-time conversation practice, and adaptive learning paths for efficient language mastery.",
+  features: [
+    "AI-driven personalized lesson plans tailored to each learner",
+    "Real-time conversation practice with instant AI feedback",
+    "Listening, reading, and writing exercises",
+    "Progress tracking with achievements and gamification"
+  ],
+  image: "/arabic.png",
+  technologies: ["Next.js", "React", "Node.js", "TailwindCSS", "OpenAI API", "AI & Adaptive Learning Algorithms"],
+  github: "#",
+  demo: "https://arabic-llm-lotc.vercel.app/",
+  type: "AI-Powered Web App"
+}
+,
     
-    {
-      title: "BeWell",
-      description:
-        "A digital mental health platform, developed using React-Native for the frontend and Node.js with Express.js for backend functionalities. Incorporated advanced technologies such as Flask for serving machine learning APIs. Utilized MongoDB as a database management system to securely store and manage user data, ensuring data privacy and compliance. Designed to bridge the treatment gap in mental health care by offering accessible, effective, and personalized mental health services globally.",
-      features: [
-        "CBT sessions",
-        "Real-time progress tracking",
-        "Community support forums",
-        "Personalized mental health services",
-        "Machine learning API integration",
-      ],
-      image: "/bewell.png",
-      technologies: [
-        "React-Native",
-        "Node.js",
-        "TypeScript",
-        "CSS styled Components",
-        "Redux",
-        "MongoDB",
-        "Python",
-        "FastAPI",
-      ],
-      github: "#",
-      demo: "#",
-      type: "Final Year Project",
-    },
+{
+  title: "Nour Endowment",
+  description: "A sustainable education endowment platform that allows donors to invest in marginalized communities, with contributions professionally invested and returns used to fund scholarships and educational initiatives.",
+  features: [
+    "Recurring donations with principal preservation",
+    "Investment growth calculator with 50-year projections",
+    "Scholarship allocation tracking and impact visualization",
+    "Tiered donor system (Founding Members, Impact Partners, Legacy Builders)",
+    "Donor testimonials and community engagement",
+    "Transparent reporting and educational impact tracking",
+    "Responsive web design for easy access and contribution"
+  ],
+  image: "/nour-endowment.png",
+  technologies: [
+    "Next.js",
+    "React",
+    "Node.js",
+    "PostgreSQL",
+    "TailwindCSS",
+    "Interactive Charts & Data Visualization"
+  ],
+  github: "#",
+  demo: "https://nourendowment.org/",
+  type: "Web App"
+}
+,
   ]
 
   return (
